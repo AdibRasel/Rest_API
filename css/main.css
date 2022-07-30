@@ -55,7 +55,11 @@
 
 /* end main contant  */
 
-
+.home_title{
+    text-align: center!important;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px #fff;
+}
 
 
 
