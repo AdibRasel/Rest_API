@@ -1,14 +1,14 @@
-const express = require("express");
+require("dotenv").config()
+const app = require("./app");
 
-const app = express();
-
-app.get('/' , (req , res)=>{
-
-   res.send('hello from simple server :)')
-
-})
+// const dotenv = require("dotenv");
+// dotenv.config({path:'./config.env'})
 
 
-app.listen(2000, ()=>{
-    console.log("Your Server is Running")
+const port = process.env.PORT || 4000;
+
+
+
+app.listen(port, ()=>{
+    console.log("Your API Server Running Port- " + port)
 })
