@@ -7,7 +7,7 @@ exports.home = (req, res)=>{
 }
 
 exports.about = (req, res)=>{
-    res.status(303);
+    res.status(200);
     res.json({
         status:"wow just fun",
         data:"about success"
